@@ -6,7 +6,7 @@
 /*   By: tykim <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 14:34:04 by tykim             #+#    #+#             */
-/*   Updated: 2018/12/08 14:57:54 by tykim            ###   ########.fr       */
+/*   Updated: 2018/12/09 15:00:17 by tykim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,12 @@
 **
 ** If the number is the negative lower max, use strdup (can also be strcpy)
 ** to the string "-2147483648".
+** len starts at 2; every time tmpn is divided by 10 len increases, because
+** it adds one more "length" to the string of chars. if the number is neg,
+** adds one more space for the - symbol. memory is allocated, null is
+** returned if it fails. The very end of the string is ended with a term.
+**
+** working its way backwards
 */
 
 static void	itoa_isnegative(int *n, int *negative)
