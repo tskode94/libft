@@ -6,11 +6,11 @@
 #    By: tykim <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/26 21:40:14 by tykim             #+#    #+#              #
-#    Updated: 2018/12/09 13:44:01 by tykim            ###   ########.fr        #
+#    Updated: 2018/12/09 15:07:28 by tykim            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+sssNAME = libft.a
 
 CFLAGS = -Wall -Wextra -Werror
 
